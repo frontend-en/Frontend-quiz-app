@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Frontend quiz app</title>
+</head>
+<body class='light-theme'>
+  <header class="control">
+    <div class="control__accessibility hidden">
+      <img src="#" alt="" class="control__img">
+      <span class="control__text"></span>
+    </div>
+    <div class="control__panel">
+     <label for="themeToggle" class="control__label">
+      <input id="themeToggle" class="checkbox" type="checkbox">
+      <span class="checkbox__inner"></span>
+     </label>
+    </div>
+  </header>
+  <div class="content">
+    <section class="header">
+
+      <secton class="header__title ">
+        <p class="header__top-title">Welcome to the</p>
+        <h1 class="header__bottom-title">Frontend Quiz!</h1>
+        <div class="header__subtitle subtitle">Pick a subject to get started.</div>
+      </secton>
+      <secton class="header__questions hidden">
+        <div class="header__questions-subtitle subtitle">Pick a subject to get started.</div>
+        <p class="header__question"></p>
+        <div id="myProgress" class="progress">
+            <div id="myBar" class="progress__second-line"></div>
+        </div>
+      </secton>
+      
+    </section>
+    <main class="main">
+      <div class="cards">
+        
+      </div>
+      <div class="score hidden">
+        <div class="score__count">8</div>
+        <div class="score__subtitle">out of 10</div>
+      </div>
+      <button id="submit" tabindex="0" class="card__submit hidden">Submit Answer</button>
+      <button id="again" class="card__submit hidden">Play Again</button>
+     <p class="card__error hidden" ><img class="card__img" src="./assets/images/icon-error.svg" /><span class="card__error-text">Please select an answer</span></p> 
+    </main>
+  </div>
+
+<script defer type="module" src="./javascript/app.js"></script>
+</body>
+</html>
