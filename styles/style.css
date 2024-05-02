@@ -472,6 +472,11 @@ body::before {
 .checkbox:checked + .checkbox__inner::after {
   left: -3px;
 }
+@media (min-width: 1440px) {
+  .checkbox:checked + .checkbox__inner::after {
+    left: -14px;
+  }
+}
 .checkbox__inner {
   display: inline-block;
   position: relative;
