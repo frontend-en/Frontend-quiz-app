@@ -43,17 +43,17 @@ function escapeHtml(html) {
     .replace(/'/g, '&#039;');
 }
 
-document.body.className = localStorage.getItem('theme') || 'light-theme';
+document.body.className = localStorage.getItem('theme') || 'dark-theme';
 
 //переключение тем 
 document.getElementById('themeToggle').addEventListener('click', function () {
 let currentTheme = localStorage.getItem('theme') || document.body.className;
-  if(!localStorage.getItem('theme') || currentTheme === 'light-theme') {
-      document.body.className = 'dark-theme';
-      localStorage.setItem('theme', 'dark-theme');
-  } else {
+  if(!localStorage.getItem('theme') || currentTheme === 'dark-theme') {
       document.body.className = 'light-theme';
       localStorage.setItem('theme', 'light-theme');
+  } else {
+      document.body.className = 'dark-theme';
+      localStorage.setItem('theme', 'dark-theme');
 
   }
 });
